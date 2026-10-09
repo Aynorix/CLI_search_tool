@@ -6,6 +6,7 @@ import argparse
 import math
 import re
 import sys
+import unicodedata
 from collections import Counter
 from pathlib import Path
 
@@ -23,7 +24,7 @@ def extract_pages(pdf_path: Path) -> tuple[int, list[tuple[int, str]]]:
         reader = PdfReader(str(pdf_path))
         pages = []
         for page_number, page in enumerate(reader.pages, start=1):
-            text = page.extract_text() or ""
+            text = unicodedata.normalize("NFKC", page.extract_text() or "")
             text = re.sub(r"\s+", " ", text).strip()
             if text:
                 pages.append((page_number, text))

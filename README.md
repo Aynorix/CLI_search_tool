@@ -1,4 +1,32 @@
-# PDF Page Similarity Search
+# Assignment 1: PDF Page Similarity Search
+
+## Example output
+
+```text
+PS C:\Users\Aynorix\OneDrive\Desktop\AI_labwork> .\.venv\Scripts\python.exe search_pdf.py
+What should I search for? cloud computing technology
+How many matching pages should I show? [5]: 5
+PDF: C:\Users\Aynorix\OneDrive\Desktop\AI_labwork\data\assignment1-pdf.pdf
+Indexed 100 of 100 pages with selectable text.
+Query: cloud computing technology
+
+Top 5 matching page(s):
+
+1. Page 2  (similarity: 1.000)
+   Cloud Computing Technology
+
+2. Page 3  (similarity: 0.383)
+   Cloud Computing Technology
+
+3. Page 1  (similarity: 0.208)
+   CLOUD COMPUTING TECHNOLOGY Huawei Technologies Co., Ltd.
+
+4. Page 70  (similarity: 0.111)
+   ______technology is the basic support of cloud computing.
+
+5. Page 5  (similarity: 0.107)
+   It is still difficult for beginners to have a more complete understanding of cloud computing technology.
+```
 
 This command-line program searches a PDF for the pages most similar to a
 question or phrase. It reports page numbers, similarity scores, and relevant
