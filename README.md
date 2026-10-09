@@ -1,4 +1,4 @@
-# Assignment 1: PDF Page Similarity Search
+# PDF Page Similarity Search
 
 This command-line program searches a PDF for the pages most similar to a
 question or phrase. It reports page numbers, similarity scores, and relevant
